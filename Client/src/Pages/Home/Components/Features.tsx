@@ -5,12 +5,12 @@ import SearchIcon from "../../../assets/HomeRes/features/SearchIcon.json";
 import { Paper } from "@mui/material";
 const Features = () => {
   return (
-    <div className="features text-black bg-white lg:h-72 flex flex-col items-center w-full text-center">
+    <div className="features text-black lg:h-72 flex flex-col items-center w-full text-center ">
       <h2 className="lg:text-xl text-lg p-3 font-bold font-sans">
         NBA V2 Features
       </h2>
       <div className="featuresGrid lg:grid lg:grid-cols-3 w-4/5 h-4/5 flex flex-col gap-10 p-3 lg:p-0">
-        <Paper elevation={2} className="h-52 Search rounded-lg ">
+        <Paper elevation={5} square={false} className="h-52 Search">
           <div className="icon h-24">
             <Lottie className="h-full" animationData={SearchIcon}></Lottie>
           </div>
@@ -22,7 +22,7 @@ const Features = () => {
             </p>
           </div>
         </Paper>
-        <Paper elevation={2} className="h-52 Visuals rounded-lg">
+        <Paper elevation={5} square={false} className="h-52 Visuals">
           <div className="icon h-24">
             <Lottie className="h-full" animationData={ChartIcon}></Lottie>
           </div>
@@ -35,7 +35,7 @@ const Features = () => {
             </p>
           </div>
         </Paper>
-        <Paper elevation={2} className="h-52 profiles rounded-lg ">
+        <Paper elevation={5} square={false} className="h-52 profiles ">
           <div className="icon h-24">
             <Lottie className="h-full p-4" animationData={ProfileIcon}></Lottie>
           </div>

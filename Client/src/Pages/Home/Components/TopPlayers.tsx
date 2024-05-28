@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Card } from "@mui/material";
 import KI from "../../../assets/HomeRes/TopPlayers/KI.jpg";
 import LJ from "../../../assets/HomeRes/TopPlayers/LJ.jpg";
 import GA from "../../../assets/HomeRes/TopPlayers/GA.jpg";
@@ -16,34 +16,34 @@ const TopPlayers = () => {
         View All Player
       </span>
       <div className="playerGrid grid grid-cols-4 w-full text-center gap-6 px-24 p-6">
-        <Paper
+        <Card
           onClick={(e) => handleClick(e)}
           id={"Lebron James"}
           className="w-fit cursor-pointer h-fit "
         >
-          <img src={KI} alt="" className="hover:mb-1 w-full h-46 border-2 rounded-md" />
-        </Paper>
-        <Paper
+          <img src={KI} alt="" className=" w-full h-46 border-2 rounded-md" />
+        </Card>
+        <Card
           onClick={(e) => handleClick(e)}
           id={"Lebron James"}
           className="w-fit cursor-pointer h-fit "
         >
-          <img src={LJ} alt="" className="hover:mb-1 w-full h-46 border-2 rounded-md" />
-        </Paper>
-        <Paper
+          <img src={LJ} alt="" className=" w-full h-46 border-2 rounded-md" />
+        </Card>
+        <Card
           onClick={(e) => handleClick(e)}
           id={"Giannis Antetokounmpo"}
           className="w-fit h-fit cursor-pointer"
         >
-          <img src={GA} alt="" className="hover:mb-1 w-full h-46 border-2 rounded-md" />
-        </Paper>
-        <Paper
+          <img src={GA} alt="" className=" w-full h-46 border-2 rounded-md" />
+        </Card>
+        <Card
           onClick={(e) => handleClick(e)}
           id={"Stephen Curry"}
           className="w-fit cursor-pointer h-fit "
         >
-          <img src={SC} alt="" className="hover:mb-1 w-full h-46 border-2 rounded-md" />
-        </Paper>
+          <img src={SC} alt="" className=" w-full h-46 border-2 rounded-md" />
+        </Card>
       </div>
     </div>
   );

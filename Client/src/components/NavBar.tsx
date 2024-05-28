@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="Navbar bg-white h-12 flex items-center lg:justify-between">
+    <nav className="Navbar text-white h-12 flex items-center lg:justify-between absolute left-0 right-0">
       {/* Desktop */}
       {/* Logo for Dekstop */}
       <div className="hidden lg:block">
@@ -81,7 +81,7 @@ const NavBar = () => {
           <img src={menuImg} alt="" />
         </button>
         {showOptions && (
-          <div className="absolute z-10 right-0 mt-10 w-48 bg-white rounded-md shadow-lg">
+          <div className="absolute text-black z-10 right-0 mt-10 w-48 bg-white rounded-md shadow-lg">
             <ul className="py-1">
               <li
                 onClick={() => handlePlayerClick()}

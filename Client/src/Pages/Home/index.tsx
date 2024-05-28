@@ -1,19 +1,16 @@
 import Features from "./Components/Features";
 import titleImg from "../../assets/HomeRes/LandingTitle.svg";
-import Logo from "../../assets/HomeRes/Logo.png";
+import Footer from "./Components/Footer";
 import { motion } from "framer-motion";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import { useEffect, useState } from "react";
 import TopPlayers from "./Components/TopPlayers";
 import TopTeams from "./Components/TopTeams";
 import { Divider } from "@mui/material";
-import { LinkedIn, GitHub } from "@mui/icons-material";
 import TopPlayersMob from "./Components/TopPlayerMob";
 import TopTeamsMob from "./Components/TopTeamsMob";
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const LinkedinUrl = import.meta.env.VITE_LINKEDIN;
-  const GithubUrl = import.meta.env.VITE_GITHUB;
   useEffect(() => {
     // Update isMobile state based on screen width
     const handleResize = () => {
@@ -67,20 +64,7 @@ const Home = () => {
         <Divider className="w-4/5" sx={{ backgroundColor: "white" }} />
         {!isMobile ? <TopTeams></TopTeams> : <TopTeamsMob />}
       </div>
-      <footer className="flex justify-center h-full">
-        <img className="h-24" src={Logo} alt="" />
-        <div className="flex flex-col h-24 justify-center">
-          <a href={LinkedinUrl}>
-            <LinkedIn
-              className="hover:text-slate-500"
-              fontSize="large"
-            ></LinkedIn>
-          </a>
-          <a href={GithubUrl}>
-            <GitHub className="hover:text-slate-500" fontSize="large"></GitHub>
-          </a>
-        </div>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 };
